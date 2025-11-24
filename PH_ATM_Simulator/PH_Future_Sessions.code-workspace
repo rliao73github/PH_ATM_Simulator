@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../PH_Memory_Scan"
+		},
+		{
+			"path": "../../PH_Buffer_Overflow"
+		}
+	],
+	"settings": {}
+}
