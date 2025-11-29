@@ -1,0 +1,20 @@
+# 使用 GCC 作为基础镜像
+FROM gcc:latest
+
+# 设置工作目录
+WORKDIR /app
+
+# 拷贝ATM.c文件到容器中
+COPY ATM.c .
+
+# 显示文件列表
+RUN echo "=== 构建阶段: 检查文件列表 ===" && ls -la
+
+# 编译C程序
+RUN gcc -o atm ATM.c
+
+# 验证编译结果
+RUN echo "=== 验证编译结果 ===" && ls -la && file atm
+
+# 设置容器启动命令
+CMD ["./atm"]
