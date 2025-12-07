@@ -1,0 +1,10 @@
+{
+  "balance_cents": 9600,
+  "transactions": [
+    {"type": 1, "amount": 100000, "balance_after": 100000, "timestamp": 1762253424},
+    {"type": 2, "amount": 200, "balance_after": 99800, "timestamp": 1762253433},
+    {"type": 1, "amount": 10000, "balance_after": 109800, "timestamp": 1762654165},
+    {"type": 2, "amount": 200, "balance_after": 109600, "timestamp": 1762654197},
+    {"type": 2, "amount": 100000, "balance_after": 9600, "timestamp": 1762654432}
+  ]
+}
