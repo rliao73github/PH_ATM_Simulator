@@ -27,7 +27,7 @@ void clearInputBuffer();
 int main(int argc, const char * argv[]) {
     int choice;
     
-    // Disable buffering on stderr to ensure logs appear immediately
+    // DISABLE Buffering on stderr to ensure logs appear immediately
     setbuf(stderr, NULL);
     
     fprintf(stderr, "[LOG] ATM Simulator starting...\n");
@@ -306,6 +306,7 @@ void logTransaction(const char* type, double amount, double balanceAfter) {
     fprintf(stderr, "[LOG] logTransaction - Transaction logged successfully\n");
 }
 
+/* Clear the input buffer to avoid leftover characters */
 void clearInputBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
